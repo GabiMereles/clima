@@ -24,7 +24,7 @@ function App() {
       if (consultar){
 
       var appId = 'f70d3ad5e73b7ae24644fbe45628fd05';
-      var url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&APPID=${appId}`;
+      var url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&APPID=${appId}`;
       var respuesta= await fetch(url);
       var resultado= await respuesta.json();
       
